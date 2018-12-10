@@ -25,11 +25,11 @@ package mail;
  * 
  * ＜＜前提条件 2を行わなかった場合＞＞
  * 不審なアプリによるアカウントへのアクセスをブロックしました
- * masatotakainishiohi@gmail.com Google
+ * @gmail.com Google
  * 以外のアプリから誰かがあなたのアカウントにログインしようとしましたが、
  * ブロックされました。心当たりがない場合は、誰かにパスワードを知られています。
  * パスワードを今すぐ変更してください。
- *  不明な端末  30 分前  日本付近 160.16.104.37 （IP アドレス）
+ *  不明な端末  30 分前  日本付近  （IP アドレス）
  * 最近、Google
  * アカウントへのログインをブロックされましたか？
  *などと警告がでる。
@@ -109,7 +109,9 @@ public class SendMailtest {
 
             final Address addrTo = new InternetAddress("zaf_docomo@docomo.ne.jp",
                     "受信者の表示名", ENCODE);
+            Address addressesCc[]= { new InternetAddress("zaf_hot@hotmail.com")};
             message.addRecipient(Message.RecipientType.TO, addrTo);
+            message.addRecipients(Message.RecipientType.CC, addressesCc);
 
             // メールのSubject
             message.setSubject("ありがとうメッセージ受信しました！", ENCODE);
