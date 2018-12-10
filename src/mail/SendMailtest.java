@@ -15,8 +15,7 @@ package mail;
  * 
  * ＜＜前提条件 1＞＞
  * まずgmailの設定（歯車アイコン）からIMAP アクセスを有効にする。
- * 
- 
+ *
  * ＜＜前提条件 2＞＞
  * http://isotai.hatenablog.com/entry/2017/02/26/180910
  * 上記のサイトにもあるが、googleにログインしたあと、以下の 
